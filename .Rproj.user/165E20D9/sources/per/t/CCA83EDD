@@ -3,7 +3,7 @@
     "path": "C:/Classes/2023-2024/CS 2020/Homework/CS-DASE-2020/hw02_camilla_lucero.R",
     "project_path": "hw02_camilla_lucero.R",
     "type": "r_source",
-    "hash": "714014196",
+    "hash": "1218277180",
     "contents": "",
     "dirty": false,
     "created": 1695316027042.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "43,0",
-        "scrollLine": "29"
+        "cursorPosition": "49,0",
+        "scrollLine": "34"
     },
     "folds": "",
-    "lastKnownWriteTime": 1695327717,
+    "lastKnownWriteTime": 1695426547,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1695327717145,
+    "last_content_update": 1695426547817,
     "read_only": false,
     "read_only_alternatives": []
 }

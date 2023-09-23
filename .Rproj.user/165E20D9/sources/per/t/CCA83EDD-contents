@@ -11,8 +11,8 @@ class(auto) #"data.frame"
 dim(auto) #"397 rows, 9 columns"
 
 #omit non applicable data and display dimensions again
-newAuto = na.omit(auto)#omit any na's
-dim(newAuto) #"397 rows, 9 columns" Whatever data that was N/A did not occupy
+auto = na.omit(auto)#omit any na's
+dim(auto) #"397 rows, 9 columns" Whatever data that was N/A did not occupy
              # an entire row, so everything stays the same.
 
 #displays names of all variables in auto
@@ -44,6 +44,10 @@ horsepowerEdit = as.double(horsepower) #convert horsepower since it does have ch
 
 infoForPairs = data.frame( mpg, displacement, acceleration, horsepowerEdit , weight)
 pairs(infoForPairs)
+
+#Display Descriptive Stats.
+summary(Auto)
+
 
 
 
