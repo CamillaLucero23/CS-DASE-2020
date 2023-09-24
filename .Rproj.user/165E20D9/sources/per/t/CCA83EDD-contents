@@ -11,8 +11,9 @@ class(auto) #"data.frame"
 dim(auto) #"397 rows, 9 columns"
 
 #omit non applicable data and display dimensions again
+auto$horsepower = as.integer(auto$horsepower)# change horse power into integer to get rid of NA's
 auto = na.omit(auto)#omit any na's
-dim(auto) #"397 rows, 9 columns" Whatever data that was N/A did not occupy
+dim(auto) #"392 rows, 9 columns" Whatever data that was N/A did not occupy
              # an entire row, so everything stays the same.
 
 #displays names of all variables in auto
@@ -40,7 +41,7 @@ plot(cylindersAsFactor, mpg, col = "green", xlab = "Cylinders", ylab = "MPG" )
 hist(mpg,col = "green", breaks = 10)
 
 #generate pairs
-horsepowerEdit = as.double(horsepower) #convert horsepower since it does have characters
+horsepowerEdit = as.integer(horsepower) #convert horsepower since it does have characters
 
 infoForPairs = data.frame( mpg, displacement, acceleration, horsepowerEdit , weight)
 pairs(infoForPairs)
