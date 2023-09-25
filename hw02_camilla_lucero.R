@@ -13,8 +13,7 @@ dim(auto) #"397 rows, 9 columns"
 #omit non applicable data and display dimensions again
 auto$horsepower = as.integer(auto$horsepower)# change horse power into integer to get rid of NA's
 auto = na.omit(auto)#omit any na's
-dim(auto) #"392 rows, 9 columns" Whatever data that was N/A did not occupy
-             # an entire row, so everything stays the same.
+dim(auto) #"392 rows, 9 columns" 
 
 #displays names of all variables in auto
 names(auto) #"[1] "mpg"          "cylinders"    "displacement" "horsepower"  
