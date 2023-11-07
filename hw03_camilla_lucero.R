@@ -11,7 +11,7 @@
 #C. Null Hypothesis (H0) - There is no relationship between global warming and the 
 #   current heat wave in the US and the participant's gender.
 
-#   Alternative Hypothesis (Ha) - There is some relationship between global warming and 
+#   Alternative Hypothesis (H1) - There is some relationship between global warming and 
 #                                 gender. 
 
 #D. Find Degrees of Freedom...
@@ -38,4 +38,30 @@ data = matrix(c(4084, 7062, 2391, 3207, 2433, 1468), nrow = 2, ncol = 3)
 rownames(data) = c("F", "M")
 colnames(data) = c("Democrat", "Independent", "Republican")
 
-#A. 
+#A. Null Hypoth. (H0) - there is no significant association between gender and political affiliation,
+#   Alt. Hypoth. (H1) - There is a significant association between gender and politcal affliation. 
+
+#B. Return the results of chi-square test in a variable X2stat and prints X-square statistics, 
+#   df, and p value
+
+x2stat = chisq.test(data)
+View(x2stat)
+
+print (x2stat$statistic) #statistic = 780.317
+print (x2stat$parameter) #df = 2
+print (x2stat$p.value) #p.value =  3.600e-170
+
+#C. Explain what does “observed”, “expected”, “residuals”, and “stdres” fields in
+#   X2stat represent
+# Observed - Observed frequencies in the data or the actual count.
+# Expected - Expected frequencies in th data or what is expected if there is no association.
+# Residuals - Differences between the expected and observed. Positive is where  observed is greater
+#             than expected, negative is where expected is greater than observed. 
+# stdres - Standard residuals where the residuals are divided by the standard deviation errors. Larger
+#          values may indicate greater association. 
+
+#D. The results would be, once comparing the p.value to 0.05 or 5%, which is a very small value, much 
+#   smaller than 0.05, so we can reject the null hypothesis and state that there is a significant association
+#   between gender and party affiliation. 
+       
+       
