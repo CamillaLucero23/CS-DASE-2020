@@ -1,27 +1,27 @@
 {
-    "id": "6B3F1758",
+    "id": "6BF8579E",
     "path": "C:/Classes/2023-2024/CS 2020/Homework/CS-DASE-2020/hw03_camilla_lucero.R",
     "project_path": "hw03_camilla_lucero.R",
     "type": "r_source",
-    "hash": "418987082",
+    "hash": "1713812164",
     "contents": "",
     "dirty": false,
-    "created": 1698685240235.0,
-    "source_on_save": true,
+    "created": 1699680605781.0,
+    "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "54,20",
-        "scrollLine": "47"
+        "cursorPosition": "52,84",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1699382100,
+    "lastKnownWriteTime": 1699886975,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1699382100860,
+    "last_content_update": 1699886975949,
     "read_only": false,
     "read_only_alternatives": []
 }

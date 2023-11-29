@@ -3,7 +3,7 @@
 #participants’ gender. Your participants will give their answers as “strongly agree”,
 #“agree”, “no opinion”, “disagree”, “strongly disagree”
 
-#A. You would use the chi-test due to how it compares the relationship between gender and 
+#A. You would use the chi-squared test of independence due to how it compares the relationship between gender and 
 #global warming.
 
 #B. There is significant relationship between global warming and gender. 
@@ -47,12 +47,17 @@ colnames(data) = c("Democrat", "Independent", "Republican")
 x2stat = chisq.test(data)
 View(x2stat)
 
-print (x2stat$statistic) #statistic = 780.317
-print (x2stat$parameter) #df = 2
-print (x2stat$p.value) #p.value =  3.600e-170
+print(x2stat) #I've found that, when printed this way, the summary abbreviates the p-value
+#statistic = 780.317
+#df = 2
+#p.value =  3.599613e-170 | this is the true value, but the summary prints < 2.2e-16
 
 #C. Explain what does “observed”, “expected”, “residuals”, and “stdres” fields in
 #   X2stat represent
+print(x2stat$observed) 
+print(x2stat$expected)
+print(x2stat$residuals)
+print(x2stat$stdres)
 # Observed - Observed frequencies in the data or the actual count.
 # Expected - Expected frequencies in th data or what is expected if there is no association.
 # Residuals - Differences between the expected and observed. Positive is where  observed is greater
